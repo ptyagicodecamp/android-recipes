@@ -6,8 +6,10 @@ This Project demos does two things:
 
 #### Scenario
 User Clicks FAB to take picture. Picture got displayed in ImageView.
-![Alt beforePic](./screenshots/s1.png) 
-![Alt AfterPic](./screenshots/s1.png)
+
+![Alt beforePic]( ./screenshots/s1.png "FAB to take picture")
+
+![Alt AfterPic](./screenshots/s2.png "Displaying recent picture")
 
 
 #### Internals
