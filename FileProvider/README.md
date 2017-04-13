@@ -1,3 +1,10 @@
+Title: FileProvider Demo
+Date: 2017-4-13 12:02PM
+Authors: ptyagi
+Category: Development
+Tags: Android, FileProvider
+Summary: This post shows usage of FileProvider in Android App to retrieve the image file for Camera intent.
+
 # FileProvider Demo
 
 This Project demos does two things:
@@ -7,9 +14,9 @@ This Project demos does two things:
 #### Scenario
 User Clicks FAB to take picture. Picture got displayed in ImageView.
 
-![Alt beforePic]( ./screenshots/s1.png "FAB to take picture")
+![Alt beforePic](https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png "FAB to take picture")
 
-![Alt AfterPic](./screenshots/s2.png "Displaying recent picture")
+![Alt AfterPic](https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png "Displaying recent picture")
 
 
 #### Internals
