@@ -8,8 +8,8 @@ Summary: This post shows usage of FileProvider in Android App to retrieve the im
 # FileProvider Demo
 
 This Project demos does two things:
-* Takes Picture: <a href="https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png">FAB to take picture</a>
-* Displays picture taken: <a href="https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png">Displaying recent picture</a>
+- Takes Picture: <a href="https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png">FAB to take picture</a>
+- Displays picture taken: <a href="https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png">Displaying recent picture</a>
 
 #### Scenario
 User Clicks FAB to take picture. Picture got displayed in ImageView.
