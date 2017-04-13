@@ -6,6 +6,9 @@ This Project demos does two things:
 
 #### Scenario
 User Clicks FAB to take picture. Picture got displayed in ImageView.
+![Alt beforePic](./screenshots/s1.png) 
+![Alt AfterPic](./screenshots/s1.png)
+
 
 #### Internals
 What happens when user clicks on FAB to initiate taking picture ?
