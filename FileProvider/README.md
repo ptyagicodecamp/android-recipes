@@ -4,10 +4,10 @@ This Project demos does two things:
 * Takes Picture
 * Displays picture taken
 
-####Scenario
+#### Scenario
 User Clicks FAB to take picture. Picture got displayed in ImageView.
 
-####Internals
+#### Internals
 What happens when user clicks on FAB to initiate taking picture ?
 First of all a temporary file get created under picture directory for app. The storage location
 will be something like this: `/storage/emulated/0/Android/data/org.pcc.fileprovider/files/Pictures`
@@ -24,12 +24,12 @@ takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, imgUri);
 startActivityForResult(takePictureIntent, REQUEST_CODE_IMAGE_CAPTURE);
 ```
 
-####Configuring FileProvider in Android Studio Project
+#### Configuring FileProvider in Android Studio Project
 
 It's a two step process. First you've to declare `<provider>` tag in your app's
 `AndroidManifest.xml`. Second, you will need to create `file_paths.xml` inside `res/xml` folder.
 
-#####AndroidManifest.xml
+##### AndroidManifest.xml
 
 `<provider>` tag has to be declared inside `<application>` tag.
 ```
@@ -48,7 +48,7 @@ It's a two step process. First you've to declare `<provider>` tag in your app's
 </application>        
 ```
 
-#####file_paths.xml
+##### file_paths.xml
 Create a file `file_paths.xml` inside `res/xml` folder of your app. This file
 will have these contents in it:
 ```
