@@ -73,4 +73,4 @@ will have these contents in it:
 
 That's it !
 
-Checkout source code in github to see `FileProviderDemo` in action. 
+Checkout [source code](https://github.com/ptyagicodecamp/android-recipes/tree/develop/FileProvider) in github to see `FileProviderDemo` in action. 
