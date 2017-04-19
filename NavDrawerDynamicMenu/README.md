@@ -59,6 +59,8 @@ automating UI generation !
 Actually, its pretty simple to do so !
 
 #### Show me code
+Here’s code that’s responsible for generating new menu items on the fly.
+
 ```
 private void addMenuItemInNavMenuDrawer() {
     NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
