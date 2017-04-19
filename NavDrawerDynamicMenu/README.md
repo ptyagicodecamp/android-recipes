@@ -92,4 +92,11 @@ Call `addMenuItemInNavMenuDrawer` in `onCreate()` method before launching your a
 
 And that's pretty much it !
 
-You can checkout source code at [github here]()
+##### Before Adding New Submenu
+[Here's](https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/blob/master/images/navdrawermenu/before_adding_menus.png)
+how Navigation drawer looks like before adding new sub menu.
+
+##### After Adding New Submenu
+[Here's](https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/blob/master/images/navdrawermenu/after_adding_menus.png) Navigation Drawer after adding brand new submenu.
+
+You can checkout source code at [github here](https://github.com/ptyagicodecamp/android-recipes/tree/develop/NavDrawerDynamicMenu)
