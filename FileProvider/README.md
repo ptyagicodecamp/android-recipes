@@ -1,13 +1,16 @@
-Title: FileProvider Demo
+Title: Accessing Pictures using FileProvider
 Date: 2017-4-13 12:02PM
 Authors: ptyagi
 Category: Development
 Tags: Android, FileProvider
 Summary: This post shows usage of FileProvider in Android App to retrieve the image file for Camera intent usage.
 
-# FileProvider Demo
 
-This Project demos does two things:
+# Accessing Pictures using FileProvider
+
+FileProvider is the backbone which helps in secure sharing of files across file-system on Android device.
+
+I’m using example of taking picture using camera on Android device to understand how FileProvider works. This Project demos does two things:
 <br>
 1. Takes Picture: <a href="https://github.com/ptyagicodecamp/ptyagicodecamp.github.io/tree/master/images/fileprovider/s1.png">FAB to take picture</a>
 <br>
@@ -73,4 +76,4 @@ will have these contents in it:
 
 That's it !
 
-Checkout [source code](https://github.com/ptyagicodecamp/android-recipes/tree/develop/FileProvider) in github to see `FileProviderDemo` in action. 
+Checkout [source code](https://github.com/ptyagicodecamp/android-recipes/tree/develop/FileProvider) in github to see `FileProviderDemo` in action.
