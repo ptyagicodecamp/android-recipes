@@ -9,3 +9,6 @@ This post shows to integrate a launcher screen in an Android App.
 
 ### [NavDrawerDynamicMenu](https://github.com/ptyagicodecamp/android-recipes/tree/develop/NavDrawerDynamicMenu)
 Quick code recipe to demonstrate the dynamic addition of menu items in Navigation Drawer.
+
+### [Requesting runtime permission for Audio recorder app](https://ptyagicodecamp.github.io/requesting-audio-permission-at-runtime.html)
+This receipe demonstrates how to request run-time permissions to enable audio recording.

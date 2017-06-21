@@ -154,4 +154,4 @@ Once file is created, it can be used to store audio data in it:
 
 At this point, you've a working Audio recorder app, that can record audio and replay it.
 
-Checkout the source code at [Github]()
+Checkout the source code at [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/AudioRuntimePermissions)
