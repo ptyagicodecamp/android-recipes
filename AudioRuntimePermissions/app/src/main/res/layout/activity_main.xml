@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.pcc.audioruntimepermissions.MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Recorder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="visible"
+        tools:layout_editor_absoluteY="26dp"
+        tools:layout_editor_absoluteX="75dp"
+        android:id="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/recordBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="startRecording"
+        android:text="@string/start_recording"
+        android:textOff="@string/start_recording"
+        android:textOn="@string/stop_recording"
+
+        tools:layout_editor_absoluteY="147dp"
+        tools:layout_editor_absoluteX="118dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="startPlaying"
+        android:text="@string/play"
+        tools:layout_editor_absoluteY="271dp"
+        tools:layout_editor_absoluteX="138dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintTop_toBottomOf="@+id/recordBtn"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical" />
+
+</android.support.constraint.ConstraintLayout>
