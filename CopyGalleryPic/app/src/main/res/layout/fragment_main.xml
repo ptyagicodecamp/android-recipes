@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.pcc.copygallerypic.view.ImageViewerFragment"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <GridLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageThumbnail"
+                android:src="@android:drawable/ic_menu_report_image"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_row="0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageName"
+                android:hint="FilePath"
+                android:singleLine="false"
+                android:minLines="2"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <Button android:layout_column="0"
+                android:layout_row="2"
+                android:layout_columnSpan="2"
+                android:id="@+id/copyImageIntoAppDir"
+                android:text="Copy Image"
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <Button android:layout_column="0"
+                android:layout_row="3"
+                android:layout_columnSpan="2"
+                android:id="@+id/renameFile"
+                android:text="Rename Image"
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="16dp"/>
+            </GridLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
