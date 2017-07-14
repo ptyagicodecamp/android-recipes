@@ -12,3 +12,6 @@ Quick code recipe to demonstrate the dynamic addition of menu items in Navigatio
 
 ### [Requesting runtime permission for Audio recorder app](https://ptyagicodecamp.github.io/requesting-audio-permission-at-runtime.html)
 This receipe demonstrates how to request run-time permissions to enable audio recording.
+
+### [Android Model-View-Presenter (MVP) Design Pattern](https://github.com/ptyagicodecamp/android-recipes/tree/develop/CopyGalleryPic)
+This receipe shows how to select image from gallery and copy it to app's data directory using MVP design pattern.
