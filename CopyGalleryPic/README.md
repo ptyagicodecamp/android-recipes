@@ -33,3 +33,80 @@ This sample app does following 4 things using MVP pattern:
 
 ### Show me code
 There're two Interfaces dedicated to View and Presenter related contracts:
+* [ContractView](https://github.com/ptyagicodecamp/android-recipes/blob/develop/CopyGalleryPic/app/src/main/java/org/pcc/copygallerypic/view/ContractView.java#L12:L22) Interface.
+```
+public interface ContractView {
+    //displays image in Imageview widget
+    void showImagePreview(@NonNull Uri uri);
+
+    //Displays image file information in textview
+    void showImageInfo(String infoSting);
+
+    //That's how a presenter is assigned to a view
+    void setUserActionListener(ContractUserActionListener userActionListener);
+
+}
+```
+* [ContractUserActionListener](https://github.com/ptyagicodecamp/android-recipes/blob/develop/CopyGalleryPic/app/src/main/java/org/pcc/copygallerypic/presenter/ContractUserActionListener.java#L12:L25) Interface
+```
+public interface ContractUserActionListener {
+
+    //An action taken by user to load a image from gallery into ImageView widget
+    void loadImage(Context context, Uri uri) throws IOException;
+
+    //User initiates action to display image file information in textView UI
+    void loadImageInfo();
+
+    //User action to copy an image from gallery in to app's picture directory (app's data directory)
+    void copyImageIntoAppDir(Context context) throws IOException;
+
+    //User can rename a image file (in app's data directory)
+    void renameImage(Context context, String newName);
+}
+```
+
+Activity or Fragment class implements `ContractView` while Presenter would implements
+`ContractUserActionListener`.
+
+In this sample, UI class `ImageViewerFragment` is implementing `ContractView`.
+```
+public class ImageViewerFragment extends Fragment implements ContractView {
+  ...
+}
+```
+
+And, Presenter class `ImagePresenter` implements `ContractUserActionListener`:
+```
+public class ImagePresenter implements ContractUserActionListener {
+  ...
+}
+```
+`ImageViewerFragment` holds a reference to `ImagePresenter`, so that it can pass
+requests to query data from models. At the same time, `ImagePresenter` holds a reference
+back to `ImageViewerFragment` to pass back on the results.
+
+That concludes the theory part.
+
+Here are few screenshots from the sample app:
+
+**Start state:**
+This is how sample app looks just after start up. The FAB '+' is clicked to select image from gallery.
+![Alt launch screen](../images/android-mvp/start.png)
+
+**Picture loaded from Gallery state:**
+![Alt Picture loaded from gallery](../images/android-mvp/picture_loaded_from_gallery.png)
+
+**Image copied to App's data dir state:**
+![Alt Image copied to App's data dir state](../images/android-mvp/image_copied_to_datadir.png)
+
+**Renaming image - Enter new name:**
+![Alt Renaming image](../images/android-mvp/rename_1.png)
+
+**Renaming image - Final:**
+![Alt Renaming image](../images/android-mvp/rename_2.png)
+
+
+###Source Code
+Source is available at [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/CopyGalleryPic)
+
+Happy Exploring !
