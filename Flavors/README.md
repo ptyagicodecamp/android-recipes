@@ -166,3 +166,5 @@ Project structure would look like this:
 ![Alt flavored code](../images/flavors/flavor_code.png)
 
 Checkout the demo app in [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Flavors)
+
+Checkout this article on [my blog](https://ptyagicodecamp.github.io/how-did-i-set-up-multiple-flavors-for-an-android-app-under-5-minutes.html)
