@@ -62,7 +62,7 @@ Each flavor can have its own application Id. An 'applicationId' makes a app in P
 In this example, the free version will be published on Play Store with packageId/applicationId as `com.pcc.flavors.free`
 and paid one will have `com.pcc.flavors.paid`.
 
-Note: I'll be showing `build.gradle` with all the configuration until til point.
+Note: I'll be showing `build.gradle` with all the configuration until this point.
 
 ```
 android {
