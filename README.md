@@ -11,7 +11,10 @@ This post shows to integrate a launcher screen in an Android App.
 Quick code recipe to demonstrate the dynamic addition of menu items in Navigation Drawer.
 
 ### [Requesting runtime permission for Audio recorder app](https://ptyagicodecamp.github.io/requesting-audio-permission-at-runtime.html)
-This receipe demonstrates how to request run-time permissions to enable audio recording.
+This recipe demonstrates how to request run-time permissions to enable audio recording.
 
 ### [Android Model-View-Presenter (MVP) Design Pattern](https://github.com/ptyagicodecamp/android-recipes/tree/develop/CopyGalleryPic)
-This receipe shows how to select image from gallery and copy it to app's data directory using MVP design pattern.
+This recipe shows how to select image from gallery and copy it to app's data directory using MVP design pattern.
+
+### [Android Flavors](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Flavors)
+This recipe shows how to configure an android app for multiple flavors.
