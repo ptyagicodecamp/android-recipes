@@ -165,4 +165,4 @@ Note: There's one gotcha though. You can't have the same class defined in `src/m
 Project structure would look like this:
 ![Alt flavored code](../images/flavors/flavor_code.png)
 
-Checkout the demo app in [Github]()
+Checkout the demo app in [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Flavors)
