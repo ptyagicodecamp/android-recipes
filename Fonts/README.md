@@ -1,5 +1,5 @@
 Title: How to start using custom fonts in an Android App under 5 minutes
-Date: 2017-07-16 10:15PM
+Date: 2017-07-26 10:15PM
 Authors: ptyagi
 Category: Development
 Tags: android, fonts, dev, 5-minutes-series
