@@ -18,3 +18,6 @@ This recipe shows how to select image from gallery and copy it to app's data dir
 
 ### [Android Flavors](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Flavors)
 This recipe shows how to configure an android app for multiple flavors.
+
+### [Android Fonts](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Fonts)
+This recipe shows how to use custom thirdparty fonts in your android app.

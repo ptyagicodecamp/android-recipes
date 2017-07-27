@@ -36,7 +36,7 @@ Here's how font resource created in previous step can be accessed from `TextView
 
         android:text="Hello Fonts !"
         android:fontFamily="@font/dot2dot"
-        android:textSize="96sp"
+        android:textSize="36sp"
 
         ...
        />
@@ -44,8 +44,14 @@ Here's how font resource created in previous step can be accessed from `TextView
 
 That's pretty much all you've to do to start using a custom Font in your Android App.
 
-Checkout the source code on [Github]()
+This is how the sample app's output look like:
+![Alt output sample app](../images/font/output.png)
+
+
+Checkout the source code on [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Fonts)
 
 Keep Exploring !
+
+***Note***: This feature of Fonts in XML is got introduced in Android O.
 
 ***Reference*** : [Documentation](https://developer.android.com/preview/features/working-with-fonts.html)
