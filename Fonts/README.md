@@ -50,6 +50,8 @@ This is how the sample app's output look like:
 
 Checkout the source code on [Github](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Fonts)
 
+Checkout this article on [my blog](https://ptyagicodecamp.github.io/how-to-start-using-custom-fonts-in-an-android-app-under-5-minutes.html)
+
 Keep Exploring !
 
 ***Note***: This feature of Fonts in XML is got introduced in Android O.
