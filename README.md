@@ -21,3 +21,6 @@ This recipe shows how to configure an android app for multiple flavors.
 
 ### [Android Fonts](https://github.com/ptyagicodecamp/android-recipes/tree/develop/Fonts)
 This recipe shows how to use custom thirdparty fonts in your android app.
+
+### [Implementing Search in RecyclerView widget](https://github.com/ptyagicodecamp/android-recipes/tree/develop/SearchInRecyclerView)
+This recipe shows how to implement Search widget in a RecyclerView widget.
