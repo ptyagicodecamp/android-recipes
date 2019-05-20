@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".view.ui.MainActivity"
+android:id="@+id/detailFrag">
     <WebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"/>
 
     <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    android:layout_below="@id/webview">
 
         <Button android:layout_width="20dp"
                 android:layout_height="20dp"
         android:layout_centerVertical="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Back"
-        android:id="@+id/webview_back"/>
+        android:id="@+id/webview_back"
+        android:background="@drawable/ic_arrow_backward"/>
 
         <Button android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Forward"
                 android:id="@+id/webview_forward"
-        android:layout_toEndOf="@id/webview_back"/>
+        android:layout_toEndOf="@id/webview_back"
+        android:background="@drawable/ic_arrow_forward"
+        android:enabled="true"/>
 
         <Button android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Back"
                 android:id="@+id/webview_refresh"
-        android:layout_toEndOf="@id/webview_forward"/>
+        android:layout_toEndOf="@id/webview_forward"
+        android:background="@drawable/ic_refresh"
+        android:enabled="true"/>
 
         <ProgressBar android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Back"
                 android:id="@+id/webview_progressbar"
         android:layout_toEndOf="@id/webview_refresh"
         style="?android:attr/progressBarStyleLarge"/>
@@ -51,4 +57,4 @@
 
     </RelativeLayout>
 
-</LinearLayout>
+</FrameLayout>
