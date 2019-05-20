@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="rowData"
+                  type="org.pcc.arch_mvvm.model.RowData"/>
+    </data>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+        <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image"
+                    android:layout_gravity="center_vertical"/>
+
+            <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@{rowData.full_name}"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@{rowData.description}"
+                android:textSize="16sp" />
+
+
+        <LinearLayout
+                android:id="@+id/item_fork_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_description"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/item_fork_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_fork" />
+
+            <TextView
+                    android:id="@+id/item_fork_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@{rowData.forks_count+``}"
+                    android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/item_star_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_description"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/item_fork_container"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/item_star_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_star_black" />
+
+            <TextView
+                    android:id="@+id/item_star_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@{rowData.stargazers_count+``}"
+                    android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/item_issues_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_description"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/item_star_container"
+                android:text="@{rowData.open_issues_count+` issues`}"
+                android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</layout>

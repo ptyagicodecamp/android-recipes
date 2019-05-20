@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+
+        <variable name="listingVM"
+                  type="org.pcc.arch_mvvm.viewmodel.ListingViewModel"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:id="@+id/listingRecyclerView"
+        android:visibility="@{safeUnbox(listingVM.loading) ? View.GONE : View.VISIBLE}">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="@{safeUnbox(listingVM.loading) ? View.VISIBLE : View.GONE}"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="No listing available"
+                  android:visibility="@{safeUnbox(listingVM.empty) ? View.VISIBLE : View.GONE}"
+        />
+
+    </LinearLayout>
+</layout>

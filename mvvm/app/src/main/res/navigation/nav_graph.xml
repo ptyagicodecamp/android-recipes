@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/listingFrag">
+    <fragment
+        android:id="@+id/listingFrag"
+        android:name="org.pcc.arch_mvvm.view.ui.listing.ListingFrag"
+        android:label="Listing"
+        tools:layout="@layout/listing_frag">
+            <action
+            android:id="@+id/action_listingFrag_to_detailFrag"
+            app:destination="@id/detailFrag"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFrag"
+        android:name="org.pcc.arch_mvvm.view.ui.detail.DetailFrag"
+        android:label="Detail">
+        <argument
+                android:name="url"
+                android:defaultValue="https://www.github.com"
+                app:argType="string"/>
+
+    </fragment>
+
+</navigation>
