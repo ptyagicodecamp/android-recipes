@@ -9,7 +9,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.detail_frag.*
-import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.pcc.arch_mvvm.R
 
 class DetailFrag: Fragment() {
@@ -27,15 +26,15 @@ class DetailFrag: Fragment() {
         }
 
         initWebView()
-        webview_back.onClick {
+        webview_back.setOnClickListener {
             webview.goBack()
         }
 
-        webview_forward.onClick {
+        webview_forward.setOnClickListener {
             webview.goForward()
         }
 
-        webview_refresh.onClick {
+        webview_refresh.setOnClickListener {
             webview.reload()
         }
 

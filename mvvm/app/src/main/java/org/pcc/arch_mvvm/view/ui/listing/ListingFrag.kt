@@ -1,6 +1,7 @@
 package org.pcc.arch_mvvm.view.ui.listing
 
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +12,11 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.listing_frag.*
-import org.jetbrains.anko.longToast
+import org.pcc.arch_mvvm.Utils
 import org.pcc.arch_mvvm.databinding.ListingFragBinding
 import org.pcc.arch_mvvm.view.adapter.ListingAdapter
 import org.pcc.arch_mvvm.viewmodel.ListingViewModel
+import org.pcc.arch_mvvm.Utils.toast
 
 class ListingFrag: Fragment() {
     private lateinit var dataBinding: ListingFragBinding
@@ -43,7 +45,7 @@ class ListingFrag: Fragment() {
             })
 
         dataBinding.viewmodel?.status?.observe(viewLifecycleOwner, Observer {
-            activity?.longToast(it)
+            (activity as Context).toast(it)
         })
     }
 

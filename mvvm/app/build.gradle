@@ -41,8 +41,8 @@ dependencies {
 
     //Anko: Kotlin helper library to make development faster
     //https://github.com/Kotlin/anko
-    implementation "org.jetbrains.anko:anko:$rootProject.anko_version"
-    implementation "org.jetbrains.anko:anko-commons:$rootProject.anko_version"
+//    implementation "org.jetbrains.anko:anko:$rootProject.anko_version"
+//    implementation "org.jetbrains.anko:anko-commons:$rootProject.anko_version"
 
 
     //Handle networking using retrofit(elegant webservices usage) and okhttp (handling http)

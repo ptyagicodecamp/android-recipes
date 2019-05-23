@@ -17,7 +17,7 @@ class Repository {
             }
 
             override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                if (response != null && response.isSuccessful) onResult(true, response.body()!!)
+                if (response.isSuccessful) onResult(true, response.body()!!)
                 else onResult(false, null)
             }
 
