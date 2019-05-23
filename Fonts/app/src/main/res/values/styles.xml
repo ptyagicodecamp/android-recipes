@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomFontStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:fontFamily">@font/dot2dot</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

@@ -1,0 +1,1 @@
+include ':app', ':ble_advertiser', ':ble_scanner'

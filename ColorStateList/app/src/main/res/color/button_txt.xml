@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Color of button when pressed-->
+    <item
+            android:state_pressed="true"
+            android:color="@color/colorAccent"/>
+
+    <!-- Color of button text when focused-->
+    <item
+            android:state_window_focused="true"
+            android:color="#ffffff"/>
+
+    <!--Default text color-->
+    <item android:color="@color/colorPrimary"/>
+</selector>

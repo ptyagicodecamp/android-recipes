@@ -50,7 +50,7 @@ android {
 
 These newly created flavors appears in "Build Variants" tab of Android Studio:
 
-![Alt Build Variants](../images/flavors/build_variants_1.png)
+![Alt Build Variants]({attach}../images/flavors/build_varaints_1.png)
 
 Note 1: You'll have to choose the configuration from "Build Variants" drop down menu before runnind the app on device/emulator.
 
@@ -134,7 +134,7 @@ the `main` directory for each flavor to support fully functional flavors (when t
 These directories must be named same as its flavor definition names. In our example, these two additional
 directories are : `freeVersion` and `paidVersion`.
 
-![Alt Flavored Icons](../images/flavors/flavored_icons.png)
+![Alt Flavored Icons]({attach}../images/flavors/flavored_icons.png)
 
 Make sure that you've the icon's name same as referenced from `AndroidManifest.xml`
 ```

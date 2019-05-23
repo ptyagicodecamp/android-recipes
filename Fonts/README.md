@@ -15,17 +15,17 @@ First, decide on the font that you're planning to use. Download it.
 I'm referring this sample font as "dot2dot.ttf".
 
 Second, add this custom font in resource directory of android app.
-![Alt font_1.png](../images/font/font_1.png)
+![Alt font_1.png]({attach}../images/font/font_1.png)
 
 Clicking on font will open it in side window.
-![Alt font_2](../images/font/font_2.png)
+![Alt font_2]({attach}../images/font/font_2.png)
 
 ### Creating Font family (XML resource file)
 Now, create the font family or a xml resource file to access this custom font from code.
 Right click on `res/font` folder and create a xml file:
-![Alt fontfamily](../images/font/font_family.png)
+![Alt fontfamily]({attach}../images/font/font_family.png)
 
-![Alt fontfamily2](../images/font/fontfamily2.png)
+![Alt fontfamily2]({attach}../images/font/fontfamily2.png)
 
 
 ### Using the Font Family in TextView

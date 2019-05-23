@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="ble_uuid">BE8E50F8-8159-453E-9AB3-CC466CA0309D</string>
+    <string name="btnStartAdvertising">Start Advertising</string>
+</resources>
